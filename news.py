@@ -8,6 +8,6 @@ googlenews.getpage(2)
 for i in range (0,20):
     r = googlenews.result()[i]
     res = {key: r[key] for key in r.keys()
-       & {'desc','title'}}
+       & {'desc','title','date'}}
     print(str(res))
 googlenews.gettext()
