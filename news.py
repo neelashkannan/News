@@ -2,6 +2,7 @@ from GoogleNews import GoogleNews
 googlenews=GoogleNews()
 googlenews=GoogleNews('en', 'd')
 a = input()
+i = int(input())
 googlenews.search(a)
 googlenews.getpage(2)
 for i in range (0,20):
